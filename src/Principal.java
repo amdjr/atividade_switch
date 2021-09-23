@@ -10,19 +10,19 @@ public class Principal {
         switch (taxa) {
             case 1:
                 System.out.println("Digite o número de nascidos:");
-                int nascidos = teclado.nextInt();
+                float nascidos = teclado.nextFloat();
                 System.out.println("Digite o número de habitantes:");
-                int habitantes = teclado.nextInt();
+                float habitantes = teclado.nextFloat();
                 Calculos.calcularNatalidade(nascidos, habitantes);
                 break;
 
             case 2:
 
                 System.out.println("Digite o número de óbitos:");
-                int obitos = teclado.nextInt();
+                float obitos = teclado.nextFloat();
                 System.out.println("Digite o número de habitantes:");
-                int habitante = teclado.nextInt();
-                Calculos.calcularNatalidade(obitos, habitante);
+                float habitante = teclado.nextFloat();
+                Calculos.calcularMortalidade(obitos, habitante);
                 break;
 
             default:
